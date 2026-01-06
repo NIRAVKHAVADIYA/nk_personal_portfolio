@@ -50,12 +50,16 @@
     border-radius: 0.75rem;
     cursor: pointer;
     transition: all 0.4s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 /* hover effect */
-.worksImg, .worksImgApp:hover{
+.worksImgApp:hover{
     transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 45px rgba(56,189,248,0.25);
+}
+
+.worksImg:hover{
+     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 20px 45px rgba(56,189,248,0.25);
 }
 
