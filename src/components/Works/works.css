@@ -1,0 +1,83 @@
+#works{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #020617; /* matches intro */
+}
+
+/* title */
+.worksTitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f9fafb;
+}
+
+/* description */
+.worksDesc{
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 60rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    color: #d1d5db;
+}
+
+/* images grid */
+.worksImgs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 70rem;
+}
+
+/* image card */
+.worksImg, .worksImgApp{
+    object-fit: cover;
+    height: 20rem;
+    width: 18rem;
+    margin: 0.75rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* hover effect */
+.worksImg, .worksImgApp:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 45px rgba(56,189,248,0.25);
+}
+
+/* button (if you enable later) */
+.workBtn{
+    padding: 0.6rem 2.8rem;
+    background: white;
+    border: none;
+    border-radius: 2rem;
+    margin: 2.5rem 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* responsive */
+@media screen and (max-width:585px) {
+    .worksImg{
+        height: 55vw;
+        width: 90%;
+    }
+    .worksImgApp{
+        height: 90vw;
+        width: 90%;
+    }
+}

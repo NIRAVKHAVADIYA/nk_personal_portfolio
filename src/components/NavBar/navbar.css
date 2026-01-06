@@ -1,0 +1,123 @@
+.navbar{
+    background: rgba(2, 6, 23, 0.85); /* improved */
+    backdrop-filter: blur(10px);      /* added */
+    height: 5rem;
+    width: 100vw;
+    max-width: 100rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    border-bottom: 1px solid rgba(255,255,255,0.08); /* added */
+}
+
+.logo{
+    object-fit: cover;
+    height: 3.8rem;
+    width: 4.8rem;
+}
+
+/* desktop menu items */
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+    color: #e5e7eb; /* added */
+    font-weight: 500;
+    transition: all 0.3s ease; /* added */
+}
+
+.desktopMenuListItem:hover{
+    color: #38bdf8; /* improved */
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* active menu */
+.active{
+    color: #38bdf8;
+    border-bottom: 3px solid #38bdf8;
+    padding-bottom: 0.5rem;
+}
+
+/* hire me button */
+.desktopMenuBtn{
+    font-weight: 600;
+    background: #ffffff;
+    color: #020617;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease; /* added */
+}
+
+.desktopMenuBtn:hover{
+    transform: translateY(-2px); /* added */
+    box-shadow: 0 10px 25px rgba(255,255,255,0.35); /* added */
+}
+
+/* button icon */
+.desktopMenuImg{
+    object-fit: cover;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-right: 0.6rem;
+}
+
+/* mobile menu icon */
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 3rem;
+    border-radius: 6rem;
+}
+
+/* mobile dropdown */
+.navMenu{
+    position: absolute;
+    top: 4.5rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 15rem;
+    background: rgba(2, 6, 23, 0.95); /* improved */
+    backdrop-filter: blur(12px);      /* added */
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.08); /* added */
+}
+
+/* mobile list items */
+.listItem{
+    color: #e5e7eb;
+    padding: 0.6rem 3rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem; /* added */
+    transition: all 0.3s ease; /* added */
+}
+
+.listItem:hover{
+    background: rgba(56,189,248,0.15); /* added */
+    color: #38bdf8;
+}
+
+/* responsive */
+@media screen and (max-width:720px) {
+    .mobMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .desktopMenuBtn{
+        display: none;
+    }
+}
