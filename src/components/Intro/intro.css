@@ -115,7 +115,7 @@
 /* responsive */
 @media screen and (max-width:840px) {
     .bg{
-        right: -10vw;
+        right: 8vw;
     }
     .introcontent{
         font-size: 2.1rem;
@@ -129,8 +129,8 @@
     .bg{
         height: 38vh;
         object-fit: cover;
-        top: -3vh;
-        right: 2vh;
+        top: -4vh;
+        right: 5vh;
     }
     .introcontent{
         margin-top: 12vh;
